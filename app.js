@@ -7,7 +7,6 @@ const expressSession = require("express-session");
 const createSessionConfig = require("./config/session");
 const db = require("./data/database");
 
-
 const addCsrfTokenMiddleware = require("./middlewares/csrf-token");
 const errorHandlerMiddleware = require("./middlewares/error-handler");
 const checkAuthStatusMiddleware = require("./middlewares/check-auth");
@@ -15,7 +14,6 @@ const protectRoutesMiddleware = require("./middlewares/protect-routes");
 const cartMiddleware = require("./middlewares/cart");
 const updateCartPricesMiddleware = require("./middlewares/update-cart-prices");
 const notFoundMiddleware = require("./middlewares/not-found");
-
 
 const authRoutes = require("./routes/auth.routes");
 const productsRoutes = require("./routes/products.routes");
